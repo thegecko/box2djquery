@@ -66,9 +66,9 @@ function createWorld() {
 	var gravity = new b2Vec2(0, canvasHeight);
 	var doSleep = true;
 	var world = new b2World(worldAABB, gravity, doSleep);
-	new b2cBox(world, canvasWidth/2.0, canvasHeight, canvasWidth, 20);
-	new b2cBox(world, 0, canvasHeight/2, 20, canvasHeight);
-	new b2cBox(world, canvasWidth, canvasHeight/2, 20, canvasHeight);
+	new b2cBox(world, canvasWidth/2, canvasHeight-10, canvasWidth*0.9, 10);
+	new b2cBox(world, 5, canvasHeight/2, 10, canvasHeight*0.8);
+	new b2cBox(world, canvasWidth-5, canvasHeight/2, 10, canvasHeight*0.8);
 	return world;	
 }
 
