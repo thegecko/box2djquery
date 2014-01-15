@@ -69,7 +69,6 @@ function createWorld() {
 	new b2cBox(world, canvasWidth/2, canvasHeight-10, canvasWidth*0.9, 10);
 	new b2cBox(world, 5, canvasHeight/2, 10, canvasHeight*0.8);
 	new b2cBox(world, canvasWidth-5, canvasHeight/2, 10, canvasHeight*0.8);
-	new b2cBox(world, canvasWidth/2-50, canvasHeight/2-50, 10, 100);
 	return world;	
 }
 
