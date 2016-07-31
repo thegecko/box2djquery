@@ -27,7 +27,6 @@ $(function() {
         else ball = ball_2;
 
         if (ball) new ball(world, e.pageX - canvasLeft, e.pageY - canvasTop);
-        return false;
     });
 
     $(canvas).bind('contextmenu', function(e) {
@@ -46,6 +45,7 @@ $(function() {
         else animal = pig;
 
         if (animal) new animal(world, e.pageX - canvasLeft, e.pageY - canvasTop);
+        return false;
     });
 
     $('#clear').click(function(e) {
